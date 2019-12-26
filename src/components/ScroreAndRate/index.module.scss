@@ -1,0 +1,50 @@
+.score-wrapper {
+	position: fixed;
+	bottom: 20px;
+	left: 30px;
+	padding: 30px;
+	overflow: hidden;
+}
+
+.score {
+	background-color: #75ae31;
+	color: #fff;
+	padding: 5px;
+	border-radius: 3px;
+	display: inline-block;
+	&__bounce {
+		animation: Score-keyframes--bounce 0.8s ease-out;
+	}
+
+	&--zero {
+		background-color: #797b77;
+	}
+}
+.rate {
+	color: #de3f18;
+	padding: 5px;
+	border-radius: 3px;
+	display: inline-block;
+	margin-left: 25px;
+}
+@keyframes Score-keyframes--bounce {
+	0%,
+	to {
+		transform: rotate(0);
+	}
+	10% {
+		transform: scale(1.1);
+	}
+	20% {
+		transform: rotate(4deg) translateY(-12px);
+	}
+	40% {
+		transform: rotate(2deg) translateY(0);
+	}
+	60% {
+		transform: rotate(-2deg) translateY(-8px);
+	}
+	80% {
+		transform: rotate(-1deg) translateY(0);
+	}
+}
