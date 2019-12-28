@@ -13,12 +13,10 @@ export const CalculatorGame = () => {
 	}, [dispatch]);
 
 	return (
-		<div>
-			<div className="question">
-				<Question />
-				<QuestionInput />
-				<ScroreAndRate />
-			</div>
+		<div className="question">
+			<Question />
+			<QuestionInput />
+			<ScroreAndRate />
 		</div>
 	);
 };
